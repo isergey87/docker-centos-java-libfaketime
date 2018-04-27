@@ -5,9 +5,9 @@ MAINTAINER isergey87 <isergey87@gmail.com>
 RUN yum update -y && \
 yum install -y epel-release && \
 yum install -y libfaketime && \
-curl -C - -LR#OH "Cookie: oraclelicense=accept-securebackup-cookie" -k "http://download.oracle.com/otn-pub/java/jdk/9.0.4+11/c2514751926b4512b076cc82f959763f/jdk-9.0.4_linux-x64_bin.rpm" && \
-yum localinstall -y jdk-9.0.4_linux-x64_bin.rpm && \
-rm -f jdk-9.0.4_linux-x64_bin.rpm && \
+curl -C - -LR#OH "Cookie: oraclelicense=accept-securebackup-cookie" -k "http://download.oracle.com/otn-pub/java/jdk/10.0.1+10/fb4372174a714e6b8c52526dc134031e/jdk-10.0.1_linux-x64_bin.rpm" && \
+yum localinstall -y jdk-10.0.1_linux-x64_bin.rpm && \
+rm -f jdk-10.0.1_linux-x64_bin.rpm && \
 yum clean all
 
 # Set environment variables.
