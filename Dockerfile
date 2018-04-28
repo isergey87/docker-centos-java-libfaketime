@@ -12,9 +12,9 @@ yum clean all
 
 # Set environment variables.
 ENV HOME /root
-ENV LD_PRELOAD /usr/lib64/faketime/libfaketime.so.1
-ENV FAKETIME_NO_CACHE 1
-ENV DONT_FAKE_MONOTONIC 1
+#ENV LD_PRELOAD /usr/lib64/faketime/libfaketime.so.1
+#ENV FAKETIME_NO_CACHE 1
+#ENV DONT_FAKE_MONOTONIC 1
 
 # Define working directory.
 WORKDIR /root
